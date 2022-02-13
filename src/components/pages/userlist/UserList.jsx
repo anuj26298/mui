@@ -23,7 +23,7 @@ export default function UserList() {
             renderCell: (params) => {
                 return (
                     <div style={{"display":"flex", "alignItems":"center"}}>
-                        <img src={params.row.avatar} style={{"height":"32px", "width":"32px", "borderRadius":"50%", "marginRight":"5px", "objectFit": "cover"}}/>
+                        <img src={params.row.avatar} style={{"height":"32px", "width":"32px", "borderRadius":"50%", "marginRight":"5px", "objectFit": "cover"}} alt=""/>
                         {params.row.username}
                     </div>
                 )
