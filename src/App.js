@@ -6,6 +6,8 @@ import Topbar from './components/TopBar/Topbar'
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import UserList from './components/pages/userlist/UserList';
 import User from './components/pages/User/User';
+import NewUser from './components/pages/newUser/NewUser';
+import Products from './components/pages/products/Products';
 function App() {
   return (
     <BrowserRouter className='App'>
@@ -16,6 +18,8 @@ function App() {
           <Route exact path='/' element={<HomePage/>} />
           <Route path='/users' element={<UserList/>}/>
           <Route path='/user/:userId' element={<User/>} />
+          <Route path="/newUser" element={<NewUser/>} />
+          <Route path="/products" element={<Products/>} />
         </Routes>
       </div>
     </BrowserRouter>
